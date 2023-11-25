@@ -502,8 +502,6 @@ onMounted(() => {
           <button
             id="submit"
             type="submit"
-            data-modal-target="default-modal"
-            data-modal-toggle="default-modal"
             class="float-right ml-10 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-black focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-blue-900 hover:text-white focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           >
             Cancelar
