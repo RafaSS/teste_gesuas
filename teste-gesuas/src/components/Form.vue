@@ -1,9 +1,9 @@
 <script>
 import { onMounted } from "vue";
-import { TheMask } from "vue-the-mask";
+import {mask} from 'vue-the-mask'
 import { Modal } from "flowbite";
 export default {
-  components: { TheMask },
+  directives: {mask},
   data() {
     return {
       nome: "",
@@ -355,7 +355,7 @@ onMounted(() => {
               id="confirm_password"
               class="bg-gray-50 mb-1 border border-2 border-black text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="000.000.000-00"
-              v-mask="'##/##/####'"
+              v-mask="['###.###.###-##', '##.###.###/####-##']"
               v-model="cpf"
               required
             />
@@ -459,12 +459,14 @@ onMounted(() => {
           <div class="mb-6">
             <label
               for="celular"
+             
               class="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
               >Celular</label
             >
             <input
               type="email"
               id="email"
+              v-mask="['(##) ####-####', '(##) #####-####']"
               class="bg-gray-50 mb-6 border border-2 border-black text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="(00)00000-0000"
             />
