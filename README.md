@@ -3,9 +3,9 @@
 
 # Teste Gesuas
 
-> teste para entrevista da gesuas (Rafael de Souza
+> teste para entrevista da gesuas (Rafael de Souza)
 
-## Prerequisites
+## Prerequisitos
 
 Esse projeto requer NodeJS (version 8 or later) e NPM.
 
